@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Date and Time</title>
+    <link rel="icon" type="image/svg+xml" href="new icon.svg">
+    <script>
+        function updateTitle() {
+            const now = new Date();
+            const dateTimeString = now.toLocaleString("en-HK"); // Format the date and time
+            document.title = dateTimeString; // Update the title of the webpage
+        }
+
+        // Update the title every second
+        setInterval(updateTitle, 1000);
+
+        // Initial call to set the title immediately
+        updateTitle();
+    </script>
+</head>
+<body>
+    <h1>Welcome to My Webpage</h1>
+    <p>This page shows the current date and time in the browser tab.</p>
+    <p>This page use svg as favicon.</p>
+</body>
+</html>
