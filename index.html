@@ -25,7 +25,7 @@
     <script>
         function changeFavicon(iconHref, newText) {
             // Update favicon
-            document.getElementById("favicon").href = iconHref;
+            document.getElementById("favicon").href = iconHref + "?v=" + new Date().getTime();
 
             // Update text
             document.getElementById("text").innerText = newText;
@@ -39,7 +39,7 @@
 
     <p id="text">Showing torres icon</p>
 
-    <button onclick="changeFavicon('icon2.png', 'Showing icon 2')">Showing icon 2</button>
+    <button onclick="changeFavicon('icon2.png', 'Showing icon 2')">Press to show icon 2</button>
 
 
 </body>
